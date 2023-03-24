@@ -2,3 +2,7 @@ build
 kcppBasic/build
 kcppBasic.build
 .vscode
+*.exe
+*.exe
+*.exe
+kcppBasic/src/klasa.exe
