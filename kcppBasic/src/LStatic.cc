@@ -14,6 +14,7 @@ static int ncall = 0;
 
 //----------------------------------------------
 int comp(int c) {
+  ncall++;
 	static int ncall = 0;
 	ncall++;
 	if(!c)
@@ -21,18 +22,24 @@ int comp(int c) {
 	return c;
 }
 
- //--- Prosze sprawdzic czy to dziala ----------
-  void comp1(){
-    ncall++;
-  } 
+//--- Prosze sprawdzic czy to dziala ----------
+void comp1(){
+  ncall++;
+}
 
 //----------------------------------------------
 int main(){
 	int a = 5, b = -10;
 
 	cout << comp(a) << ' ' << comp(b);
-	comp1();
 	cout << "\nFunkcja zostala wywolana " << comp(0) << " razy.\n";
+
+	comp1();
+	comp1();
+	comp1();
+	comp1();
+	comp1();
+  cout << ncall << endl;
 
 	return 0;
 }

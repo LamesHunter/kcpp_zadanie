@@ -1,5 +1,4 @@
 build
-kccpBasic/build
+kcppBasic/build
+kcppBasic.build
 .vscode
-*.exe
-
