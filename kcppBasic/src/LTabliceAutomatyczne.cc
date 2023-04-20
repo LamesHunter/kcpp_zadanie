@@ -39,31 +39,31 @@ void tablice(){
 	const int i=20, j=10;
 
 	int A[10] = {0};         ///<tablica 10 int
-  /* for(int w=0; w<10; w++){
-   *   cout <<"Tab: "<< A[w] << endl;
-   * } */
+  for(int w=0; w<10; w++){
+    cout <<"Tab: "<< A[w] << endl;
+  }
 
 	int A0[10];             ///<tablica 10 int
 
-  // CoutWholeArray(A,10);
+  CoutWholeArray(A,10);
 	int A1[]={1,2,3,4,5,6};  ///<tablica 6 int
-  // CoutWholeArray(A1,6);
+  CoutWholeArray(A1,6);
 
-  int A2[6]={0};
-	// int A2[6]={6};
-  // CoutWholeArray(A2,6);
+  //int A2[6]={0};
+	int A2[6]={6};
+  CoutWholeArray(A2,6);
 
   int A3[6]{0,0,1,0,0,0};
-  // CoutWholeArray(A3,6);
+  CoutWholeArray(A3,6);
 	int A4[6]{0};
 	//int A4[6]{7};
-  // CoutWholeArray(A4,6);
+  CoutWholeArray(A4,6);
 
 	//tablica 20 znaków
 	char B[i]={'a', 'b', 'c', 'd', 'e', 'f'};
-  /* for(int w=0; w<i; w++){
-   *   cout << B[w] <<"\t"<< endl;
-   * } */
+  for(int w=0; w<i; w++){
+    cout << B[w] <<"\t"<< endl;
+  } 
   int BB[j]={0,1,2,3};
 
 	//tablica 3 znakow
@@ -83,14 +83,16 @@ void tablice(){
 	for (k=0; k<10; k++){
 		cout<<"A["<<k<<"]="<<*(A+k) <<"\t"<< A[k] <<endl;}
 
-  /* //--------------------------------------
-   * // Zadanie
-   * //--------------------------------------
-   * cout <<"\nA[0] = "<< A[0] << endl;
-   * (*A)++;
-   * // (*A++);     ///< error, prosze powiedziec dlaczego?
-   * cout <<  (*A)++ << endl;
-   * cout <<"A[0] = "<< A[0] << endl;
-   * //-------------------------------------- */
+ //--------------------------------------
+   // Zadanie
+   //--------------------------------------
+   cout <<"\nA[0] = "<< A[0] << endl;
+   (*A)++;
+   int fVar = (*A)++;
+   cout << fVar << endl;
+   //(*A++);     ///< error, prosze powiedziec dlaczego?
+   cout <<  (*A)++ << endl;
+   cout <<"A[0] = "<< A[0] << endl;
+   
 
 }
