@@ -9,22 +9,30 @@ extern "C" void fun1()
 
 extern "C" void fun2()
 {
-    cout << "Funkcja 2" << endl;
+    int a = 5;
+    int b = 4;
+    cout << a + b << endl;
 }
 
 void fun3()
 {
-    cout << "Funkcja 3" << endl;
+    int a = 5;
+    int b = 4;
+    cout << a - b << endl;
 }
 
 void fun4()
 {
-    cout << "Funkcja 4" << endl;
+    int a = 5;
+    int b = 4;
+    cout << a%b << endl;
 }
 
 void fun5()
 {
-    cout << "Funkcja 5" << endl;
+    int a = 5;
+    int b = 4;
+    cout << a*b << endl;
 }
 
 int main(){
