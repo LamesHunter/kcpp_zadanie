@@ -74,7 +74,7 @@ Napisz program przekazujący kopię tablicy. (Czy da się przekazać kopię?)
  - nazwać program: ZadAdresowaniePamieci.cc
 
 
- Zadanie 3.2 (LArytmetykaWskazikow.cc)
+ Zadanie 3.2 (LArytmetykaWskaznikow.cc)
  -------------------------------------
  Wyjaśnić i[q] gdy i jest 'int', a q jest wskaźnikiem na tablice
  - wyjaśnienie  w komentarzu w treści programu!!!!
@@ -84,9 +84,8 @@ Napisz program przekazujący kopię tablicy. (Czy da się przekazać kopię?)
 
  Zadanie 3.3 (LArytmetykaWskaznikow.cc)
  -------------------------------------
- Co robia ponizsze operacje? Napisac program ktory pokazuje ich dzialanie.
- 1. Funkcja1(): Przy deklaracji zmiennych
- 2. Funkcja2(): Przy deklaracji tablicy
+ Co robią poniższe operacje? Napisać program który pokazuje ich działanie.
+ 1. Funkcja1()
  p++;
  ++p;
  ++*p;
@@ -98,7 +97,7 @@ Napisz program przekazujący kopię tablicy. (Czy da się przekazać kopię?)
  *++p;
  *(++p);
 
- oraz (Funkcja3()) w analogii do LArytmetykaWzkaznikowZmienne.cc aby wypisywal na ekran:
+ oraz (Funkcja2()) w analogii do LArytmetykaWzkaznikowZmienne.cc aby wypisywał na ekran:
 
  1.  A, B, C: 0  0   0
  2.  A, B, C: 0  10  0
@@ -111,32 +110,26 @@ Napisz program przekazujący kopię tablicy. (Czy da się przekazać kopię?)
  9.  A, B, C: 80 70  60
  10. A, B, C: 80 90  60
 
- przy poczatkowych zmmiennych: int a = 0, b = 0, c = 0;
+ przy początkowych wartościach zmiennych: int a = 0, b = 0, c = 0;
  - nazwać program: ZadArytmetykaWskaznikow.cc
 
 
-Zadanie 3.4 (LArytmetykaWskaznikowTablice.cc)
---------------------------------------
- Zaproponuj inne dwa sposoby wyboru wywołania funkcji
- - nazwać program: ZadWywolanieFunkcji.cc 
-
-
-NIE: Zadanie 3.5 (LOperatoryPrzypisania.cc)
+Zadanie 3.4 (LOperatoryPrzypisania.cc)
 -------------------------------------
-Napisac program z przykladami:
+Napisać program z przykładami:
 (1) operatorow arytmetycznych i (2) operatorow przypisania
 (1) i (2) jako osobne funkcje: (1) OperatoryArytmetyczne (2) OperatoryPrzypisania
 - nazwać program: ZadOperatoryPrzypisania.cc
 
 
 
-Zadanie 3.6
+Zadanie 3.5 (Nie trzeba, bo jest zrobione)
 --------------------------------------
 Napisać program z "Priorytety operatorów" (kcpp02::18) - na zajeciach
 - nazwać program: ZadPriorytetyOperatorow.cc
 
 
-NIE: Zadanie 3.7
+Zadanie 3.6 (Nie trzeba, ale proszę zajrzeć do LPrzeliczenieDec2Bin[A|B].cc)
 --------------------------------------
 Napisać program przeliczający
 - liczby binarne na dziesiętne (nazwać: ZadBin2Dec.cc)
@@ -145,6 +138,15 @@ Napisać program przeliczający
   Przykłady
   (github) LPrzeliczanieDec2BinA.cc
   (github) LPrzeliczanieDec2BinB.cc
+
+
+Zadanie 3.7 (LBitoweOperatoryLogiczneB.c i ..czneC.cc)
+-------------------------------------
+Proszę napisać samodziely program który jako argument będzie przyjmował tablice 8
+elementową, gdize na poszczególnych pozycjach tablicy będize 0 lub 1. Program będzie
+zwracał liczbę, która w formi bonarnej będzie miała ustawione 1 na pozycjach odpowiadających
+pozycjom 1 w tablicy. Wystarczy zmodyfikować program LBitoweOperatoryLogiczneC.cc
+- nazwać program: LBitoweOperatoryLogiczneSingleVariable.cc
 
 
 
@@ -158,6 +160,12 @@ Napisać program przeliczający
 
 Zadanie 4.0
 --------------------------------------
+Napisz program z przykładem zastosowania klasy stringstream z biblioteki sstream
+- nazwać program LStringStream.cc
+
+
+Zadanie 4.1
+--------------------------------------
 Napisz program z przykładami manipulacji strumieniem cout:
 - setw, setprecision, setfill, fixed, scientific, hex, dec... etc (patrz plik kcpp02.pdf)
 - nazwać program LManipulacjaStrumieniemCout.cc
@@ -166,33 +174,34 @@ Napisz program z przykładami manipulacji strumieniem cout:
   ==================================================
   Wynika naszego działania: x.xxxxx jest niepoprawny ale:
      output:   xx.xxx    T:  x.xxx 
+  // float w = 16.0;
      output1:   x.xxxx   T: xx.xxxxx
      output2:   x.xxxx   T: xx.xxxxxx
      ---------------------------------
      average:  xx.xxxx   T: xx.xxxxxx
   ==================================================
   - x.xxxx są wynikami jakiś działań, a nie sztucznie wstawionymi liczbami
-  - ustawienie liczb/wypisanie/sformatowanie wykonać używając manipulatorow strumieniem (setw, setprecision, setfill etc), zamiast " "
+  - ustawienie liczb/wypisanie/sformatowanie wykonać używając manipulatorow strumieniem (setw, setprecision, setfill etc), zamiast " " czy \t
 
 
-Zadanie 4.1
+Zadanie 4.2
 --------------------------------------
 Napisz program pokazujący funkcjonalność:
 - wypisywania na ekran,
-- +zapisywanie do strumienie błędów
+- +zapisywanie do strumienia błędów
 - zapisywania do pliku,
 - odczytywania z pliku,
 - nazwać program: ZadCinCoutFile.cc
 
 
-Zadanie 4.2
+Zadanie 4.3
 --------------------------------------
 Napisz program:
 - pokazujący wykonanie tych samych operacji w c i c++ (kcpp02::34)
 - nazwać program: ZadCandCPP.cc
 
 
-Zadanie 4.3
+Zadanie 4.4
 --------------------------------------
 Napisz program sprawdzający czy liczba jest parzysta/nieparzysta:
 - trzy funkcje:
@@ -203,13 +212,13 @@ Napisz program sprawdzający czy liczba jest parzysta/nieparzysta:
 - nazwać program: ZadParzysta.cc
 
 
-Zadanie 4.4
+Zadanie 4.5 
 --------------------------------------
 Napisz program z użyciem 'switch' wybierajacy do wykonania jedną z trzech funkcji z zadania ZadParzysta.cc:
 - nazwać program: ZadParzystaCase.cc (kopia ZadParzyste do ZadParzysteCase+switch, lub pominięcie ZadParzyste i umieszczenie wszystkiego w ZadParzystaCase)
 
 
-Zadanie 4.5
+Zadanie 4.6
 --------------------------------------
 Napisz program pokazujący działanie instrukcji (każda jako osobna funkcja; trzy funkcje od a do c):
 (a) while    (pokazujące while z inkrementacją: i++, ++i)
@@ -219,7 +228,7 @@ Napisz program pokazujący działanie instrukcji (każda jako osobna funkcja; tr
 - nazwać program: ZadPetle.cc
 
 
-Zadanie 4.6
+Zadanie 4.7
 --------------------------------------
 Napisz program wykorzystujący instrukcje 'switch' gdzie:
 - zamiast pojedynczego znaku będzie sprawdzane całe słowo
@@ -227,7 +236,7 @@ Napisz program wykorzystujący instrukcje 'switch' gdzie:
 - nazwać program: ZadSwitch.cc
 
 
-Zadanie 4.7
+Zadanie 4.8
 --------------------------------------
 Napisz program pokazujący zstosowanie dyrektywy preprocesora:
   '#ifdef' (#else)
