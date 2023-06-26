@@ -1,14 +1,13 @@
-#ifndef ZadKcpp_H
-#define ZadKcpp_H
+namespace N{
+    class ZadKcpp
+    {
+    public:
+        bool czyParzystaBitowo(int a);
+        bool czyParzystaModulo(int a);
+        bool czyParzystaWarunkowa(int a);
+        void menu();
+    };
+}
 
 
-class ZadKcpp
-{
-public:
-    bool czyParzystaBitowo(int a);
-    bool czyParzystaModulo(int a);
-    bool czyParzystaWarunkowa(int a);
-    void menu();
-};
 
-#endif
